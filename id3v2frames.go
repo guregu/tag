@@ -556,6 +556,10 @@ func (p Picture) String() string {
 		p.Ext, p.MIMEType, p.Type, p.Description, len(p.Data))
 }
 
+func ReadPICFrame(b []byte) (*Picture, error) {
+	return readPICFrame(b)
+}
+
 // IDv2.2
 // -- Header
 // Attached picture   "PIC"
