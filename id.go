@@ -55,7 +55,7 @@ func Identify(r io.ReadSeeker) (format Format, fileType FileType, err error) {
 			err = fmt.Errorf("ID3 version: %v, expected: 2, 3 or 4", uint(b[0]))
 			return
 		}
-		return format, MP3, nil
+		return format, UnknownFileType, nil
 	}
 
 	n, err := r.Seek(-128, io.SeekEnd)
