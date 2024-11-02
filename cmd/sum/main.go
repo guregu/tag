@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/dhowden/tag"
+	"github.com/guregu/tag"
 )
 
 func main() {
